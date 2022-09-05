@@ -1,99 +1,139 @@
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-body {
+@font-face {
+    font-family: "Zuume" ;
+    src: url(./font/Zuume\ ExtraBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+:root{
+    --cor-primaria: #FF4655ff;
+    --cor-secundaria: #ffffff;
+    --fonte-titulo: Zuume, sans-serif ;
+    --fonte-texto: 'Poppins', sans-serif; 
+}
 
+body {
     background-color: #0F1923;
     display: flex;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
     height: 100vh;
-
+    font-family: var(--fonte-texto);
 }
 
 header{
-
-    background-color: #FF4655;
+    background-color: var(--cor-primaria);
     font-size: 1rem; 
     padding-bottom: 19.5px; 
-
+    font-family: var(--fonte-texto);
 }
+
 .menu{
-
     display: flex;
-
 }
+
 .logo_riot{
-
-    height: 55px;
-    margin-top: 23px;
-    margin-left: 62px;
-
+    height: 6vh;
+    margin-top: 4vh;
+    margin-left: 3vw;
 }
+
 .barra{
-
-    height: 62.5px;
-    margin-top: 23px;
-    margin-left: 34px;
-
+    height: 7vh;
+    width: 3px;
+    margin-top: 4vh;
+    margin-left: 3vw;
 }
+
 .valorant_icon{
-
-    height: 55px;
-    margin-top: 23px;
-    margin-left: 34px;
-
+    height: 6vh;
+    margin-top: 4vh;
+    margin-left: 3vw;
 }
-.abas{
 
-    width: 800px;
-    margin-top: 39px;
-    margin-left: 105px;
+.abas{
+    width: 60vw;
+    margin-top: 5vh;
+    margin-left: 3vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 main{
-
     background: no-repeat url(./img/background.png);
-    margin-top: 27px;
-    background-size: 1500px;
+    background-size: 120.5vh;
+    display: flex;
+    
+}
+
+.conteudo{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(1,3);
+    padding-left: 3vw;
+    padding-top: 5vh;
+}
+
+.title{
+    display: flex; 
+    font-family: var(--fonte-titulo);
+    justify-content:;
+    flex-direction: column;
+    align-items: ;
+    padding-top: ;
+}
+
+.killjoy_text{
+    color: var(--cor-primaria);
+    position: absolute;
+    font-size: 20vh;
+    z-index: -1;
+}
+
+.killjoy_subtext{
+   color: var(--cor-secundaria);
+   font-size: 2rem;
+   place-self: center; 
+   
+}
+.bio{
+    font-family: var(--fonte-titulo);
+    color: var(--cor-secundaria);
+}
+
+.description{
+
 
 }
 
 .killjoy_container{
-
+    margin-top: 27px;
+    height: 511px;
     display: flex;
     justify-content: end;
+
     margin-right: 42px;
-    
+   
 }
+
 .bg2{
-
-    height: 700px;
-    position: absolute;
+    padding-top: -10px;
+    height: 511px;
     z-index: -1;
-    transform: translate(0%, -10%);
-    
+    position: absolute;
 }
+
 .logo_valorant{
-
-    transform: translate(-10%, -30%);
-    height: 500px;
-
+    height: 300px;
+    transform: translate(-20%, 20%);
 }
+
 .killjoy_image{
-    height: 710px;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, -18%);
-    
+    transform: translate(-10%, -10%);
 }
 
 
