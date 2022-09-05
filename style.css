@@ -1,0 +1,99 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+
+    background-color: #0F1923;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+
+}
+
+header{
+
+    background-color: #FF4655;
+    font-size: 1rem; 
+    padding-bottom: 19.5px; 
+
+}
+.menu{
+
+    display: flex;
+
+}
+.logo_riot{
+
+    height: 55px;
+    margin-top: 23px;
+    margin-left: 62px;
+
+}
+.barra{
+
+    height: 62.5px;
+    margin-top: 23px;
+    margin-left: 34px;
+
+}
+.valorant_icon{
+
+    height: 55px;
+    margin-top: 23px;
+    margin-left: 34px;
+
+}
+.abas{
+
+    width: 800px;
+    margin-top: 39px;
+    margin-left: 105px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+main{
+
+    background: no-repeat url(./img/background.png);
+    margin-top: 27px;
+    background-size: 1500px;
+
+}
+
+.killjoy_container{
+
+    display: flex;
+    justify-content: end;
+    margin-right: 42px;
+    
+}
+.bg2{
+
+    height: 700px;
+    position: absolute;
+    z-index: -1;
+    transform: translate(0%, -10%);
+    
+}
+.logo_valorant{
+
+    transform: translate(-10%, -30%);
+    height: 500px;
+
+}
+.killjoy_image{
+    height: 710px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -18%);
+    
+}
+
+
